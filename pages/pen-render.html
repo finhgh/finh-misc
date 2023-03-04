@@ -6,14 +6,21 @@
         <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
-        <h1 class="title">finh-misc</h1>
+        <h1 class="title"><a href=../index.html>finh-misc</a></h1>
+
         <h2 class="pghead">Project: Creating and Rendering a Pot of Pens</h2> 
+
+        <div class="section">
+            <img src="../pages/images/pen-render-final.jpg" alt="Final Render">
+        </div>
+
         <div class="section">
             <p>I first went about making the pen model by measuring a normal ballpoint pen's dimensions using vernier calipers.
                 Then I created the inital model in Autodesk Fusion360 where multiple bodies were created to form the pen.
             </p>
             <img src="../pages/images/pen-model-construction.jpeg" alt="Final Render" class="hv-images">
         </div>
+
         <div class="section">
             <img src="../pages/images/pen-scene-setup.jpeg" alt="Scene Setup" class="hv-images">
             <p> Using the exported model, I was able to setup a scene with a bunch of pens suspended above a small cup.
@@ -25,6 +32,48 @@
                  of all of the pens to ensure that they aren't clipping into each other. After this, their translated
                  positions can be made permanent.
             </p>
+        </div>
+
+
+        <div class="section">
+            <p>With all of the pen models in position I was now confident in building some sort of scene
+                that could be used within the render. 
+                <br>
+                <br>
+                The base/floor underneath the pen bot was beveled initially with Blender's built-in function fo the same name.
+                This was applied to the vertical edges of the base. Using the HardOps addon, you can perform a global bevel 
+                to the whole base. Having a high enough polygon count in both of the boolean operations allows for a "smooth finish".
+                <br>
+                <br>
+                An "L" shaped box was positioned as the background and smoothed out with a singular boolean operation.
+                Having a gap between the base and the background allowed for depth. Similar to
+                a corner of a desk in the corner of a room.
+
+            </p>
+            <img src="../pages/images/pen-positioned-objects-raw.jpeg" alt="Positioned Objects" class="hv-images">
+        </div>
+
+        <div class="section">
+            <img src="../pages/images/pen-positioned-lighting.jpeg" alt="Initial Lighting" class="hv-images">
+            <p>Determining the lighting against the pens was important so I tested out different planar and spot lights
+                to achieve a good amount of brightness and reflection before applying any further materials.
+
+            </p>
+        </div>
+
+        <div class="section">
+            <p>Now that the positioning of the pens and the main lighting has been established, all that is left is the 
+                scene lighting and the materials.
+                <br>
+                <br>
+                Using the nodular effects system I can produce the shiny plastics, fogged glass and soft matte colours
+                 needed to perfect the scene. No texture mapping was needed.
+                <br>
+                <br>
+                The render was then optimised for a better quality than what the default render settings provided.
+
+            </p>
+            <img src="../pages/images/pen-positioned-objects-preview.jpeg" alt="Render Preview" class="hv-images">
         </div>
     </body>
 </html>
