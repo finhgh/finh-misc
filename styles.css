@@ -1,14 +1,13 @@
 /*=======Page Styling=======*/
 body{
-    background-color: azure;
+    background-color: #a69cac;
     font-family: Verdana, "Geneva", Tahoma, sans-serif;
     align-items: center;
+    margin: 0%;
 }
 .title{
     font-size: 60px;
     font-weight: 1000;
-    text-align: center;
-    color: black;
 }
 .title:hover{
     color: grey;
@@ -16,6 +15,46 @@ body{
 a{
     text-decoration: none;
     color: inherit;
+}
+h1{
+    margin: 10px 0% 0% 0%;
+}
+h2{
+    font-size: 70px;
+    padding: 0%;
+    font-weight: 700;
+}
+h3{
+    font-size: 30px;
+    padding: 0%;
+    font-weight: 500;
+}
+
+
+/*======Top Bar Styling======*/
+.top-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+
+    color: #f1dac4;
+    background-color: #161b33;
+}
+.git-button{
+    fill: #f1dac4;
+}
+.git-button:hover{
+    fill: grey;
+}
+
+/*=======Container Styling=======*/
+.container{
+    display: flex;
+    padding: 0% 10%;
+}
+.upper-desc{
+    color: #0d0c1d;
 }
 
 /*=======Section Styling=======*/
@@ -53,10 +92,10 @@ a{
     
 }
 .indexButton:hover{
-    background-color: rgb(29, 67, 173);
+    background-color: #272949;
 }
 .indexButton{
-    background: rgb(87, 119, 206);
+    background: #474973;
     padding: 10px 20px 10px 20px;
     width: 20%;
     
@@ -64,6 +103,6 @@ a{
     text-align: center;
     font-weight: 600;
     font-size: 19px;
-    color: white;
+    color: #f1dac4;
     text-decoration:none;
 }
